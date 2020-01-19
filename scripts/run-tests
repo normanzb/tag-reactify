@@ -1,0 +1,4 @@
+./node_modules/.bin/mocha --require "@babel/register" --recursive \
+  "tests/**/*.+(js|jsx)" \
+  "src/**/test.+(js|jsx)" \
+  "src/**/tests/**.+(js|jsx)"
