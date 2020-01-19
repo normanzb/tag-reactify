@@ -6,7 +6,9 @@
   "module": "src/index.js",
   "scripts": {
     "build": "npm run test && babel src -d lib",
-    "test": "./scripts/run-tests"
+    "test": "./scripts/run-tests",
+    "preversion": "npm i && npm run build",
+    "postversion": "node_modules/.bin/push-current-branch-and-latest-tag"
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +31,7 @@
     "jsdom": "^16.0.0",
     "mocha": "^7.0.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "normanzb-build-scripts": "^0.0.4"
   }
 }
