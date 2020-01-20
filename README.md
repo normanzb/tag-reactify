@@ -1,6 +1,6 @@
 # Tag Reactify
 
-It takes a string with `<Tag/>`s, safely converts tags into renderable react dom according specified tag-react mapping
+It takes a string with `<Tag/>`s, safely converts tags into renderable react dom according to specified tag-react mapping
 
 ## Install
 
